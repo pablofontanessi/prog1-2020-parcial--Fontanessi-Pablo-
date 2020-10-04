@@ -15,7 +15,7 @@ namespace Parcial1
         {
            
 
-            if (TipoEnvioFragil != "Explosivo")
+            if (TipoEnvioFragil != "Explosivo") //PODRIA SER UN ENUM
             {
                 if (CodigoPostalDestino == CodigoPostalOrigen)
                 {

@@ -13,6 +13,7 @@ namespace Parcial1
 
         public void RegistrarNuevoEnvio(string TipoEnvio, int CodigoPostalOrigen, int CodigoPostalDestino, double VolumenPaquete, double PesoPaquete, string NombreCliente)
         {
+            //DUPLICA MUCHO CODIGO
             switch (TipoEnvio)
             {
                 case "Normal":
@@ -82,7 +83,7 @@ namespace Parcial1
         }
 
 
-
+        //NO MAXIMIZA GANANCIAS PORQ NO CUENTA CANTIDAD DE PAQUETES
         public List<Envio> ObtenerMaximoListaEnvio(List<Envio> ListaEnvio, double PesoMax, double VolumenMax)
         {
             List<Envio> ListaEnviosMaxGanancia = new List<Envio>();

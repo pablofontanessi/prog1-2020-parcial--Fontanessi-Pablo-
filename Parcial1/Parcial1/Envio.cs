@@ -18,6 +18,7 @@ namespace Parcial1
         public string NombreCliente { get; set; }
         public double CostoEnvio { get; set; }
 
+        //ESTE METODO DEBERIA SER UNO SOLO
         abstract public DateTime GenerarFechaEntrega();
         abstract public double GenerarCostoEnvio();
 
@@ -27,6 +28,7 @@ namespace Parcial1
             int CodigoSeguimiento = NroAleatorio.Next(100000, 999999);
             return CodigoSeguimiento;
         }
+
         public int CodigoSeguimientoValido(List<Envio> ListaEnvio)
         {
             CodigoSeguimiento = GenerarCodigoSeguimiento();
